@@ -103,9 +103,7 @@ git branch dev 新建本地分支
 
 `git branch dev` 从master分支复制一份代码
 
-`git branch -D dev` 删除分支
-
-  从当前分支复制一份代码，创建并切换到dev分支
+`git branch -D dev` 删除分支从当前分支复制一份代码，创建并切换到dev分支
 
 ` git pull origin dev` 拉取dev分支下的代码把不同的内容输出在文件中
 
@@ -138,6 +136,34 @@ git branch dev 新建本地分支
 `git add .`之后可以采用`git reset HEAD test2.txt`让`git commit -m`没有test2.txt文件
 
 `git checkout test1.txt` 或者 `git restore test1.txt`返回到修改之前的状态
+
+
+
+
+
+
+
+## 常用命令
+
+```git
+git pull --rebase origin master		# 代码合并
+git tag v1.0.0										# 本地分支打标签
+git push origin --tags						# 把本地所有 tags 传到服务器
+git push origin v1.0 						  # 把本地 v1.0  tags 传到服务器
+git push origin :dev							# 删除远程 dev 分支
+
+git branch dev 										# 新建本地分支 从master分支复制一份代码
+git checkout dev 									# 切换到 dev 分支
+git push origin dev								# 推送分支
+```
+
+
+
+
+
+
+
+
 
 
 
