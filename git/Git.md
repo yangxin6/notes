@@ -146,6 +146,7 @@ git branch dev 新建本地分支
 ## 常用命令
 
 ```git
+git checkout -b netty  # 新建本地分支
 git pull --rebase origin master		# 代码合并
 git tag v1.0.0										# 本地分支打标签
 git push origin --tags						# 把本地所有 tags 传到服务器
